@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TabInActionBar</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">TAB 1</string>
+    <string name="title_section2">TAB 2</string>
+    <string name="title_section3">TAB 3</string>
+
+
+
+
+</resources>
