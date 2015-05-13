@@ -2,26 +2,16 @@ package com.example.qualtronic.tabinactionbar;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentTransaction;
-
-
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 
-public class MainActivity extends FragmentActivity implements
+public class MainActivity extends Activity implements
         ActionBar.TabListener {
 
-    public Fragment myFragmentTemp;
+    Fragment myFragment;
 
 
     private static final String STATE_SELECTED_NAVIGATION_ITEM = "selected_navigation_item";
@@ -44,22 +34,13 @@ public class MainActivity extends FragmentActivity implements
 ///--------------------------------------------------------------------------------------------------
 
 
-
-
         if (savedInstanceState == null){
-
-            myFragmentTemp = new Fragment1();
-
+            myFragment = new Fragment1();
             //ft.add(R.id.content_layout, myFragment);
            //myFragment.setArguments(myBundle);   //Musi byæ do przesy³ania bundle
             // Log.d("Test", "BUNDLE SEND________" + myBundle );
            // ft.commit();
         }
-
-
-
-
-
 
     }
 
